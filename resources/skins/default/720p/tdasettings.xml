@@ -1,0 +1,343 @@
+<window id="1500">
+
+
+<controls>
+	
+	<include>CommonBackground</include>	
+	<include>CommonTopBar</include>
+	
+	<control type="group">
+		<include>Window_OpenClose_Animation_Slide_Down</include>
+		
+		<control type="button">
+			<posx>3</posx>
+			<posy>3</posy>
+			<width>75</width>
+			<height>75</height>
+			<texturenofocus>floor_button.png</texturenofocus>
+			<texturefocus>floor_buttonFO.png</texturefocus>
+		</control>
+		<control type="button" id=1501>
+			<posx>3</posx>
+			<posy>3</posy>
+			<width>75</width>
+			<height>75</height>
+			<texturenofocus>icon_back_w.png</texturenofocus>
+			<texturefocus>icon_back_w.png</texturefocus>
+		</control>
+		
+	   <control type="image">		
+		<include>VisibleFadeEffect</include>
+			<posx>65</posx>
+			<posy>7</posy>
+			<width>175</width>
+			<height>75</height>
+			<aligny>center</aligny>
+			<align>left</align>
+			<texture>ceas.png</texture>
+		</control>
+		<control type="label">
+			<description>time label</description>
+			<posx>95</posx>
+			<posy>5</posy>
+			<width>0</width>
+			<height>75</height>
+			<aligny>center</aligny>
+			<align>left</align>
+			<font>font30</font>
+			<textcolor>white</textcolor>
+			<label>$INFO[System.Time(hh:mm)]</label>
+			<include>VisibleFadeEffect</include>
+		</control>
+		<control type="label">
+			<description>time label</description>
+			<posx>1100</posx>
+			<posy>10</posy>
+			<width>0</width>
+			<height>75</height>
+			<aligny>center</aligny>
+			<align>left</align>
+			<font>font20</font>
+			<textcolor>white</textcolor>
+			<label>$INFO[System.Time(xx)]</label>
+			<include>VisibleFadeEffect</include>
+		</control>
+		
+		<control type="label" id=1502>
+			<description>title</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>ScreenWidth</width>
+			<height>90</height>
+			<aligny>center</aligny>
+			<align>center</align>
+			<font>font30</font>
+			<textcolor>white</textcolor>
+			<label>TDA-Settings</label>
+			<include>VisibleFadeEffect</include>
+		</control>		
+	</control> 
+
+	<include>CommonBottomBar</include>
+   	<include>BehindDialogFadeOut</include>
+	
+	<!-- labels -->
+	<control type="group">
+		<include>Window_OpenClose_Animation_Slide_Up</include>		
+		
+		<control type="label">
+			<description>Volume</description>
+			<posx>80</posx>
+			<posy>200r</posy>
+			<width>200</width>
+			<height>100</height>
+			<aligny>center</aligny>
+			<align>left</align>
+			<font>font40_title</font>
+			<textcolor>white</textcolor>
+			<label>Volume</label>
+		</control>
+		<control type="label">
+			<description>Bass</description>
+			<posx>350</posx>
+			<posy>200r</posy>
+			<width>200</width>
+			<height>100</height>
+			<aligny>center</aligny>
+			<align>left</align>
+			<font>font40_title</font>
+			<textcolor>white</textcolor>
+			<label>Bass</label>
+		</control>
+		<control type="label">
+			<description>Treble</description>
+			<posx>560</posx>
+			<posy>200r</posy>
+			<width>200</width>
+			<height>100</height>
+			<aligny>center</aligny>
+			<align>left</align>
+			<font>font40_title</font>
+			<textcolor>white</textcolor>
+			<label>Treble</label>
+		</control>
+		<control type="label">
+			<description>Fade</description>
+			<posx>790</posx>
+			<posy>200r</posy>
+			<width>200</width>
+			<height>100</height>
+			<aligny>center</aligny>
+			<align>left</align>
+			<font>font40_title</font>
+			<textcolor>white</textcolor>
+			<label>Fade</label>
+		</control>
+		<control type="label">
+			<description>Balance</description>
+			<posx>980</posx>
+			<posy>200r</posy>
+			<width>200</width>
+			<height>100</height>
+			<aligny>center</aligny>
+			<align>left</align>
+			<font>font40_title</font>
+			<textcolor>white</textcolor>
+			<label>Balance</label>
+		</control>
+	</control>
+	
+	<!-- buttons -->
+	<control type="group">
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+		<control type="button" id=1515>
+			<description>VolumeDown</description>
+			<posx>90</posx>
+			<posy>200</posy>
+			<width>100</width>
+			<height>100</height>
+			<label>+</label>
+			<align>center</align>
+      		<aligny>center</aligny>
+			<texturenofocus>floor_button.png</texturenofocus>
+			<texturefocus>floor_buttonFO.png</texturefocus>
+		</control>
+		<control type="button" id=1516>
+			<description>VoluemDown</description>
+			<posx>90</posx>
+			<posy>300</posy>
+			<width>100</width>
+			<height>100</height>
+			<label>-</label>
+			<align>center</align>
+      		<aligny>center</aligny>
+			<texturenofocus>floor_button.png</texturenofocus>
+			<texturefocus>floor_buttonFO.png</texturefocus>
+		</control>
+		<control type="button" id=1503>
+			<description>BassUp</description>
+			<posx>350</posx>
+			<posy>200</posy>
+			<width>100</width>
+			<height>100</height>
+			<label>+</label>
+			<align>center</align>
+      		<aligny>center</aligny>
+			<texturenofocus>floor_button.png</texturenofocus>
+			<texturefocus>floor_buttonFO.png</texturefocus>
+		</control>
+		<control type="button" id=1504>
+			<description>BassDown</description>
+			<posx>350</posx>
+			<posy>300</posy>
+			<width>100</width>
+			<height>100</height>
+			<label>-</label>
+			<align>center</align>
+      		<aligny>center</aligny>
+			<texturenofocus>floor_button.png</texturenofocus>
+			<texturefocus>floor_buttonFO.png</texturefocus>
+		</control>
+		<control type="button" id=1505>
+			<description>TrebleUp</description>
+			<posx>570</posx>
+			<posy>200</posy>
+			<width>100</width>
+			<height>100</height>
+			<label>+</label>
+			<align>center</align>
+      		<aligny>center</aligny>
+			<texturenofocus>floor_button.png</texturenofocus>
+			<texturefocus>floor_buttonFO.png</texturefocus>
+		</control>
+		<control type="button" id=1506>
+			<description>TrebleDown</description>
+			<posx>570</posx>
+			<posy>300</posy>
+			<width>100</width>
+			<height>100</height>
+			<label>-</label>
+			<align>center</align>
+      		<aligny>center</aligny>
+			<texturenofocus>floor_button.png</texturenofocus>
+			<texturefocus>floor_buttonFO.png</texturefocus>
+		</control>
+		<control type="button" id=1507>
+			<description>FadeLeft</description>
+			<posx>790</posx>
+			<posy>200</posy>
+			<width>100</width>
+			<height>100</height>
+			<label>Front</label>
+			<align>center</align>
+      		<aligny>center</aligny>
+			<texturenofocus>floor_button.png</texturenofocus>
+			<texturefocus>floor_buttonFO.png</texturefocus>
+		</control>
+		<control type="button" id=1508>
+			<description>FadeRight</description>
+			<posx>790</posx>
+			<posy>300</posy>
+			<width>100</width>
+			<height>100</height>
+			<label>Rear</label>
+			<align>center</align>
+      		<aligny>center</aligny>
+			<texturenofocus>floor_button.png</texturenofocus>
+			<texturefocus>floor_buttonFO.png</texturefocus>
+		</control>
+		<control type="button" id=1509>
+			<description>BalanceLeft</description>
+			<posx>960</posx>
+			<posy>250</posy>
+			<width>100</width>
+			<height>100</height>
+			<label>Left</label>
+			<align>center</align>
+      		<aligny>center</aligny>
+			<texturenofocus>floor_button.png</texturenofocus>
+			<texturefocus>floor_buttonFO.png</texturefocus>
+		</control>
+		<control type="button" id=1510>
+			<description>BalanceRight</description>
+			<posx>1060</posx>
+			<posy>250</posy>
+			<width>100</width>
+			<height>100</height>
+			<label>Right</label>
+			<align>center</align>
+      		<aligny>center</aligny>
+			<texturenofocus>floor_button.png</texturenofocus>
+			<texturefocus>floor_buttonFO.png</texturefocus>
+		</control>
+		
+	
+		
+	</control>
+
+	
+	<!-- Values -->
+    <control type="group">
+	   <animation effect="fade" time="750">WindowOpen</animation>
+	   <animation effect="fade" time="750">WindowClose</animation>
+	 	
+	 	<control type="label" id=1517>
+			<posx>90</posx>
+			<posy>400</posy>
+			<width>100</width>
+			<height>100</height>
+			<textcolor>white</textcolor>
+			<aligny>center</aligny>
+			<align>left</align>
+			<font>font40_title</font>
+			<!--label>$INFO[Window(Home).Property(volume)]</label-->
+			<info>Window(Home).Property(volume)</info>
+		</control>
+		<control type="label" id=1511>
+			<posx>350</posx>
+			<posy>400</posy>
+			<width>100</width>
+			<height>100</height>
+			<textcolor>white</textcolor>
+			<aligny>center</aligny>
+			<align>left</align>
+			<font>font40_title</font>
+			<label>$INFO[Window(Home).Property(bass)]</label>
+		</control>
+		<control type="label" id=1512>
+			<posx>570</posx>
+			<posy>400</posy>
+			<width>100</width>
+			<height>100</height>
+			<textcolor>white</textcolor>
+			<aligny>center</aligny>
+			<align>left</align>
+			<font>font40_title</font>
+			<label>$INFO[Window(Home).Property(treble)]</label>
+		</control>
+		<control type="label" id=1513>
+			<posx>790</posx>
+			<posy>400</posy>
+			<width>100</width>
+			<height>100</height>
+			<textcolor>white</textcolor>
+			<aligny>center</aligny>
+			<align>left</align>
+			<font>font40_title</font>
+			<label>$INFO[Window(Home).Property(fade)]</label>
+		</control>
+		<control type="label" id=1514>
+			<posx>1010</posx>
+			<posy>400</posy>
+			<width>100</width>
+			<height>100</height>
+			<textcolor>white</textcolor>
+			<aligny>center</aligny>
+			<align>left</align>
+			<font>font40_title</font>
+			<label>$INFO[Window(Home).Property(balance)]</label>
+		</control>
+	</control>
+</controls>
+	
+</window>
